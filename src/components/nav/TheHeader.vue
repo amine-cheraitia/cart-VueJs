@@ -35,6 +35,14 @@ export default {
       return this.$store.getters['cart/cartQty'];
     },
   },
+  methods: {
+    login() {
+      this.$store.dispatch('login');
+    },
+    logout() {
+      this.$store.dispatch('logout');
+    },
+  },
 };
 </script>
 
